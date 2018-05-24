@@ -34,9 +34,7 @@ CREATE TABLE `tb_admin` (
 /*Data for the table `tb_admin` */
 
 insert  into `tb_admin`(`id_admin`,`user_admin`,`pass_admin`,`status_admin`,`salt_admin`,`nama_depan`,`nama_belakang`) values 
-(11000001,'faizal97','5e35ef5200e19f1b8789ea37eafcc51243d7bcd6fbb03784152ff6c6f118707e794bac8107ba6c38ce4a05af92f9cc7d66c36cce86bf42d58cb06d018df48f39','Kepala Sekolah','ec3df1df55d8aad7a7804e7670cbeca6b858ab06fa1b2c1d9012d036bc1379916bc76215d3dac1b4aa90913bac9455e51d911dfbf4ec2cdf76aa3e761ac2ccfe','Faizal','Ardian Putra'),
-(11000002,'anisa96','7152f86293de5895e2e5ab9f12fcc87fad221717dd389e606111bd1bbb626a0cb58a7dc4e6047849b56243094f519ec8af643188a44cc05075d7297a9316ce14','Tata Usaha','5acd1ad0930d2fb6e396c2c0d1901a067e80cfd6f4b453f096bf4a3c4c5198995993ccc89a34ba14e97a20a83838c15c0e6095947778000c8d1f4b5885faab99','Anisa','Cahyani'),
-(11000003,'ae123','b6b69076bbfa627255911c5e945d485baa63a051f4e551eaad3a7d1d744c3e66ace003038c508b71663609c1b2a18a7c6a3f93c831dcbef71805ef7f59d8d1ea','Tata Usaha','95c11d85b9a7ff8fe488656af674c96c453e6194f14d01b8e3a0b8891e6dfe73a6f2bb5d7acbee3aad7140fb4c7e60a9f27b30e5f5f0ac4af601d459a565c471','Aldhan','Ernest');
+(11000001,'faizal97','f9368c9d6b1123d0a4552d72e00e4915b2c794b1ae24d80365967db74905700a8c4a49507d0b0c9b58315dca7d827f0995b91b4e6469b95ef8743897f9619d73','Kepala Sekolah','42c12307ced024cb6c079638b48eb2bdcb49fded2f063e71b075c6f395de8b488e5951d4fb5ce26ea4289cdf02729673c619bd75cb2a9798d845bc095e9a51e5','Faizal','Ardian Putra');
 
 /*Table structure for table `tb_biaya` */
 
@@ -50,11 +48,6 @@ CREATE TABLE `tb_biaya` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `tb_biaya` */
-
-insert  into `tb_biaya`(`id_biaya`,`nama_biaya`,`jml_bayar`) values 
-(11000001,'SPP',250000),
-(11000002,'Uang Gedung',2500000),
-(11000003,'Kegiatan',100000);
 
 /*Table structure for table `tb_pembayaran` */
 
@@ -74,14 +67,6 @@ CREATE TABLE `tb_pembayaran` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `tb_pembayaran` */
-
-insert  into `tb_pembayaran`(`id_pembayaran`,`id_biaya`,`id_siswa`,`tgl_bayar`,`jml_bayar`) values 
-(11000001,11000001,1800000001,'2018-04-15',250000),
-(11000002,11000001,1800000001,'2018-04-15',250000),
-(11000003,11000001,1800000001,'2018-04-15',250000),
-(11000004,11000001,1800000001,'2018-04-15',250000),
-(11000005,11000001,1800000001,'2018-04-15',250000),
-(11000006,11000001,1800000001,'2018-04-01',250000);
 
 /*Table structure for table `tb_pendaftaran` */
 
@@ -107,14 +92,6 @@ CREATE TABLE `tb_pendaftaran` (
 
 /*Data for the table `tb_pendaftaran` */
 
-insert  into `tb_pendaftaran`(`no_pendaftaran`,`tahun_ajaran`,`nama_lengkap`,`agama`,`tempat_lahir`,`tgl_lahir`,`jk`,`alamat`,`telp`,`nama_wali`,`pekerjaan_wali`,`sekolah_asal`,`tahun_lulus`,`keterangan`) values 
-(1800000001,2018,'skdjfnsdkfn','Islam','kdjnf','1008-08-29','Laki-Laki','dnfkjsnkdfjnk','9879879879','josndkfjn','ksjdnfkjsdn','kjdfnksjdfn',2001,'LUNAS'),
-(1800000002,2018,'nakdjfnkajfn','Islam','jkdfnkjsdnfkjn','0000-00-00','Laki-Laki','osodfoskdfosn','09032823','asjfnijafni','aofniaenfijn','adfniwneifn',2001,'LUNAS'),
-(1800000003,2018,'nakdjfnkajfn','Islam','jkdfnkjsdnfkjn','0000-00-00','Laki-Laki','osodfoskdfosn','09032823','asjfnijafni','aofniaenfijn','adfniwneifn',2001,'LUNAS'),
-(1800000004,2018,'nakdjfnkajfn','Islam','jkdfnkjsdnfkjn','0000-00-00','Laki-Laki','osodfoskdfosn','09032823','asjfnijafni','aofniaenfijn','adfniwneifn',2001,'LUNAS'),
-(1800000005,2018,'nakdjfnkajfn','Islam','jkdfnkjsdnfkjn','0000-00-00','Laki-Laki','osodfoskdfosn','09032823','asjfnijafni','aofniaenfijn','adfniwneifn',2001,'LUNAS'),
-(1800000006,2018,'nakdjfnkajfn','Islam','jkdfnkjsdnfkjn','0000-00-00','Laki-Laki','osodfoskdfosn','09032823','asjfnijafni','aofniaenfijn','adfniwneifn',2001,'LUNAS');
-
 /*Table structure for table `tb_siswa` */
 
 DROP TABLE IF EXISTS `tb_siswa`;
@@ -139,13 +116,6 @@ CREATE TABLE `tb_siswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `tb_siswa` */
-
-insert  into `tb_siswa`(`id_siswa`,`nis`,`tahun_ajaran`,`nama_lengkap`,`tempat_lahir`,`tgl_lahir`,`jk`,`alamat`,`agama`,`telp`,`nama_wali`,`pekerjaan_wali`,`sekolah_asal`,`tahun_lulus`) values 
-(1800000001,1800000001,2018,'Budi','kdjnf','1008-08-29','Laki-Laki','dnfkjsnkdfjnk','Islam','9879879879','josndkfjn','ksjdnfkjsdn','kjdfnksjdfn',2001),
-(1800000002,1800000002,2018,'nakdjfnkajfn','jkdfnkjsdnfkjn','0000-00-00','Laki-Laki','osodfoskdfosn','Islam','09032823','asjfnijafni','aofniaenfijn','adfniwneifn',2001),
-(1800000003,1800000003,2018,'nakdjfnkajfn','jkdfnkjsdnfkjn','0000-00-00','Laki-Laki','osodfoskdfosn','Islam','09032823','asjfnijafni','aofniaenfijn','adfniwneifn',2001),
-(1800000004,1800000004,2018,'nakdjfnkajfn','jkdfnkjsdnfkjn','0000-00-00','Laki-Laki','osodfoskdfosn','Islam','09032823','asjfnijafni','aofniaenfijn','adfniwneifn',2001),
-(1800000006,1800000006,2018,'nakdjfnkajfn','jkdfnkjsdnfkjn','0000-00-00','Laki-Laki','osodfoskdfosn','Islam','09032823','asjfnijafni','aofniaenfijn','adfniwneifn',2001);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

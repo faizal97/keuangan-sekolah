@@ -31,8 +31,8 @@ else {
 	<div class="kebawah">
 	<div style="padding-left:10px">
 		<div class="kotak klik">
-		<a href="index.php?page=datapendaftaran"><img src="images/daftar.png" style="width:100%"></a><br><br><br>
-		<a href="index.php?page=datapendaftaran"><button type="button" class="btn btn-primary btn-lg sharp">Pendaftaran Siswa</button></a>
+		<a href="index.php?page=datapendaftaran"><img src="images/daftar.png" style="width:100%"><br><br><br>
+		<button type="button" class="btn btn-primary btn-lg sharp">Pendaftaran Siswa</button></a>
 
 
 		</div>
@@ -49,16 +49,16 @@ else {
 
 		<div class="kebawah">
 		<div class="kotak klik">
-		<a href="index.php?page=datapembayaran"><img src="images/bayar.png" style="width:100%"></a><br><br><br>
-		<a href="index.php?page=datapembayaran"><button type="button" class="btn btn-primary2 btn-lg sharp">Pembayaran</button></a>
+		<a href="?page=datapembayaran&item="><img src="images/bayar.png" style="width:100%"></a><br><br><br>
+		<a href="?page=datapembayaran&item="><button type="button" class="btn btn-primary2 btn-lg sharp">Pembayaran</button></a>
 
 		</div>
 		</div>
 
 		<div class="kebawah">
 		<div class="kotak klik">
-		<a href="index.php?page=laporankeseluruhan"><img src="images/laporan.png" style="width:100%"></a><br><br><br>
-		<a href="index.php?page=laporankeseluruhan"><button type="button" class="btn btn-danger btn-lg sharp">Laporan</button></a>
+		<a href="#" onclick="tanyatahun('all')"><img src="images/laporan.png" style="width:100%"></a><br><br><br>
+		<a href="#" onclick="tanyatahun('all')"><button type="button" class="btn btn-danger btn-lg sharp">Laporan</button></a>
 		</div>
 		</div>
 		</div>
