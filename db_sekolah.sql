@@ -49,25 +49,6 @@ CREATE TABLE `tb_biaya` (
 
 /*Data for the table `tb_biaya` */
 
-/*Table structure for table `tb_pembayaran` */
-
-DROP TABLE IF EXISTS `tb_pembayaran`;
-
-CREATE TABLE `tb_pembayaran` (
-  `id_pembayaran` int(11) NOT NULL,
-  `id_biaya` int(11) NOT NULL,
-  `id_siswa` int(11) NOT NULL,
-  `tgl_bayar` date NOT NULL,
-  `jml_bayar` int(11) NOT NULL,
-  PRIMARY KEY (`id_pembayaran`),
-  KEY `id_biaya` (`id_biaya`),
-  KEY `id_siswa` (`id_siswa`),
-  CONSTRAINT `tb_pembayaran_ibfk_1` FOREIGN KEY (`id_biaya`) REFERENCES `tb_biaya` (`id_biaya`),
-  CONSTRAINT `tb_pembayaran_ibfk_2` FOREIGN KEY (`id_siswa`) REFERENCES `tb_siswa` (`id_siswa`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-/*Data for the table `tb_pembayaran` */
-
 /*Table structure for table `tb_pendaftaran` */
 
 DROP TABLE IF EXISTS `tb_pendaftaran`;
@@ -116,6 +97,26 @@ CREATE TABLE `tb_siswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `tb_siswa` */
+
+/*Table structure for table `tb_pembayaran` */
+
+DROP TABLE IF EXISTS `tb_pembayaran`;
+
+CREATE TABLE `tb_pembayaran` (
+  `id_pembayaran` int(11) NOT NULL,
+  `id_biaya` int(11) NOT NULL,
+  `id_siswa` int(11) NOT NULL,
+  `tgl_bayar` date NOT NULL,
+  `jml_bayar` int(11) NOT NULL,
+  PRIMARY KEY (`id_pembayaran`),
+  KEY `id_biaya` (`id_biaya`),
+  KEY `id_siswa` (`id_siswa`),
+  CONSTRAINT `tb_pembayaran_ibfk_1` FOREIGN KEY (`id_biaya`) REFERENCES `tb_biaya` (`id_biaya`),
+  CONSTRAINT `tb_pembayaran_ibfk_2` FOREIGN KEY (`id_siswa`) REFERENCES `tb_siswa` (`id_siswa`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `tb_pembayaran` */
+
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
